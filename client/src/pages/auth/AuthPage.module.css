@@ -1,0 +1,106 @@
+/* ── CUSTOMER LOGIN — Split layout ── */
+.splitPage { display: flex; min-height: 100vh; }
+
+.splitLeft {
+  width: 420px; flex-shrink: 0;
+  background: linear-gradient(160deg, #1E3A8A 0%, #1D4ED8 50%, #2563EB 100%);
+  padding: 40px; display: flex; flex-direction: column;
+}
+.splitLogo { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: auto; }
+.splitLogoIcon { width: 36px; height: 36px; background: rgba(255,255,255,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+.splitLogo span { font-family: var(--font-display); font-size: 18px; font-weight: 800; color: #fff; letter-spacing: -0.02em; }
+.splitContent { padding: 60px 0 40px; }
+.splitHeadline { font-family: var(--font-display); font-size: 36px; font-weight: 800; color: #fff; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 16px; }
+.splitTagline { font-size: 15px; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 40px; font-weight: 300; }
+.splitStats { display: flex; gap: 28px; }
+.splitStat {}
+.splitStatVal { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: #fff; letter-spacing: -0.02em; }
+.splitStatLabel { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 2px; }
+.splitFooter { display: flex; align-items: center; gap: 7px; font-size: 12px; color: rgba(255,255,255,0.35); margin-top: auto; }
+
+.splitRight { flex: 1; display: flex; align-items: center; justify-content: center; background: var(--bg-light); padding: 40px 24px; }
+.formCard { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 40px; width: 100%; max-width: 400px; box-shadow: var(--shadow-md); }
+.formTop { margin-bottom: 28px; }
+.formTitle { font-family: var(--font-display); font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 6px; }
+.formSub { font-size: 14px; color: var(--text-muted); }
+.form { display: flex; flex-direction: column; gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+
+/* Input with icon */
+.inputWrap { position: relative; }
+.inputIcon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); pointer-events: none; }
+.inputWithIcon { padding-left: 38px !important; }
+.inputWithAction { padding-right: 40px !important; }
+.inputAction { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; padding: 4px; display: flex; align-items: center; border-radius: 4px; }
+.inputAction:hover { background: var(--bg-light); }
+
+/* Divider */
+.dividerRow { display: flex; align-items: center; gap: 12px; margin: 16px 0 12px; }
+.divider { flex: 1; height: 1px; background: var(--border); }
+.dividerText { font-size: 12px; color: var(--text-hint); flex-shrink: 0; }
+
+/* Track link */
+.trackLink { display: flex; align-items: center; justify-content: center; gap: 7px; font-size: 13px; font-weight: 500; color: var(--text-muted); text-decoration: none; padding: 10px; border: 1px solid var(--border); border-radius: 9px; transition: all .18s; }
+.trackLink:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-light); }
+
+.formFooter { font-size: 13px; color: var(--text-muted); text-align: center; margin-top: 16px; }
+.authLink { color: var(--blue); font-weight: 600; text-decoration: none; }
+.authLink:hover { text-decoration: underline; }
+
+.adminHint { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; color: var(--text-hint); margin-top: 12px; }
+.adminLink { color: var(--text-muted); font-weight: 500; text-decoration: none; }
+.adminLink:hover { color: var(--text); }
+
+/* ── ADMIN LOGIN ── */
+.adminLoginPage {
+  min-height: 100vh;
+  background: var(--bg-dark);
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+}
+.adminLoginCard {
+  background: #0D1526;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%; max-width: 420px;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.4);
+}
+.adminLoginLogo { display: flex; align-items: center; gap: 12px; }
+.adminLogoIcon { width: 40px; height: 40px; background: var(--blue); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+.adminLogoName { font-family: var(--font-display); font-size: 16px; font-weight: 800; color: #fff; letter-spacing: -0.02em; }
+.adminLogoBadge { font-size: 11px; font-weight: 600; color: #475569; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 1px; }
+.adminLoginDivider { height: 1px; background: rgba(255,255,255,0.07); margin: 24px 0; }
+.adminTitle { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: #fff; letter-spacing: -0.02em; margin-bottom: 6px; }
+.adminSub { font-size: 13px; color: #475569; }
+
+/* Admin form overrides for dark bg */
+.adminLoginCard .inputWrap input { background: rgba(255,255,255,0.04) !important; border-color: rgba(255,255,255,0.1) !important; color: #fff !important; }
+.adminLoginCard .inputWrap input::placeholder { color: #334155 !important; }
+.adminLoginCard .inputWrap input:focus { border-color: var(--blue) !important; background: rgba(255,255,255,0.07) !important; }
+.adminLoginCard label { color: #64748B !important; }
+
+.adminWarning { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #92400E; background: rgba(217,119,6,0.1); border: 1px solid rgba(217,119,6,0.2); border-radius: 8px; padding: 8px 12px; }
+.adminBackLink { text-align: center; margin-top: 24px; }
+.adminBackLink .authLink { display: inline-flex; align-items: center; gap: 5px; color: #334155; font-weight: 500; font-size: 13px; }
+.adminBackLink .authLink:hover { color: #64748B; }
+
+/* Register page reuse */
+.page { min-height: 100vh; background: var(--bg-light); display: flex; align-items: center; justify-content: center; padding: 20px; }
+.card { background: #fff; border-radius: 20px; border: 1px solid var(--border); padding: 40px; max-width: 420px; width: 100%; box-shadow: var(--shadow-md); }
+.logo { display: flex; align-items: center; gap: 9px; text-decoration: none; margin-bottom: 28px; }
+.logoIcon { width: 32px; height: 32px; background: var(--blue); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.logo span { font-family: var(--font-display); font-size: 16px; font-weight: 800; color: var(--text); letter-spacing: -0.02em; }
+.title { font-family: var(--font-display); font-size: 24px; font-weight: 800; margin-bottom: 6px; letter-spacing: -0.02em; }
+.sub { font-size: 14px; color: var(--text-muted); margin-bottom: 28px; }
+.footer { font-size: 13px; color: var(--text-muted); text-align: center; margin-top: 20px; }
+
+@media (max-width: 900px) {
+  .splitPage { flex-direction: column; }
+  .splitLeft { width: 100%; padding: 32px 24px; min-height: auto; }
+  .splitContent { padding: 24px 0; }
+  .splitHeadline { font-size: 26px; }
+  .splitStats { gap: 20px; }
+  .splitFooter { display: none; }
+  .splitRight { padding: 32px 16px; background: var(--bg-light); }
+}

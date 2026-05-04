@@ -1,0 +1,17 @@
+/* Dashboard.module.css */
+.page { min-height: 100vh; padding: 100px 0 60px; background: #F3F4F6; }
+.header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 28px; }
+.header h1 { font-family: var(--font-display); font-size: 28px; font-weight: 800; margin-bottom: 4px; }
+.header p { color: #6B7280; font-size: 15px; }
+.tabs { display: flex; gap: 4px; background: #fff; border: 0.5px solid rgba(17,24,39,0.1); border-radius: 12px; padding: 4px; margin-bottom: 20px; width: fit-content; }
+.tab { padding: 8px 20px; border-radius: 9px; border: none; background: transparent; font-size: 14px; font-family: 'DM Sans', sans-serif; cursor: pointer; color: #6B7280; transition: all .2s; }
+.tab.active { background: #2563EB; color: #fff; font-weight: 500; }
+.bookingCard { background: #fff; border: 0.5px solid rgba(17,24,39,0.1); border-radius: 14px; padding: 20px 24px; margin-bottom: 14px; }
+.bookingTop { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.refNum { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: #2563EB; margin-bottom: 4px; }
+.route { font-size: 15px; font-weight: 500; margin-bottom: 4px; }
+.date { font-size: 13px; color: #6B7280; }
+.total { font-family: var(--font-display); font-size: 18px; font-weight: 800; color: #111827; margin-top: 6px; }
+.bookingActions { margin-top: 14px; padding-top: 14px; border-top: 0.5px solid rgba(17,24,39,0.08); }
+.empty { text-align: center; padding: 60px 20px; color: #6B7280; background: #fff; border-radius: 16px; border: 0.5px solid rgba(17,24,39,0.1); }
+.empty h3 { font-family: var(--font-display); font-size: 18px; color: #111827; margin-bottom: 8px; }
